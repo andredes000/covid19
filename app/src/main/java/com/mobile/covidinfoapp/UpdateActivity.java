@@ -47,6 +47,7 @@ public class UpdateActivity extends AppCompatActivity {
             public void onResponse(Call<List<CovidData>> call, Response<List<CovidData>> response) {
                 if (response.isSuccessful()) {
                     loadData(response.body());
+                    showLoading(false);
                 }else{
                     Toast.makeText(UpdateActivity.this, "No Response!", Toast.LENGTH_LONG).show();
                 }

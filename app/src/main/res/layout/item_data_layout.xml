@@ -5,6 +5,19 @@
     android:layout_marginTop="8dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/white"
+        android:elevation="8dp"
+        app:cardCornerRadius="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -13,7 +26,8 @@
         android:textColor="@android:color/black"
         android:textStyle="bold"
         android:textSize="15sp"
-        android:layout_marginStart="4dp"/>
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -24,16 +38,32 @@
         android:textStyle="bold"
         android:textSize="15sp"
         android:layout_marginStart="40dp"
-        android:layout_toRightOf="@id/txt_title"/>
+        android:layout_toRightOf="@id/txt_title"
+        android:layout_marginTop="20dp"/>
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:id="@+id/btn_all_data"
+            android:layout_toEndOf="@id/txt_waktu"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="10dp"
+            android:text="All Data"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:backgroundTint="@android:color/holo_blue_bright"/>
     <androidx.cardview.widget.CardView
         android:layout_width="130dp"
         android:layout_height="100dp"
         android:id="@+id/card1"
-        android:backgroundTint="@android:color/holo_blue_light"
+        android:backgroundTint="@android:color/holo_blue_bright"
         app:cardCornerRadius="4dp"
         android:layout_marginStart="4dp"
         android:layout_marginEnd="4dp"
         android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
         android:layout_below="@id/txt_title">
 
         <RelativeLayout
@@ -80,13 +110,16 @@
     <androidx.cardview.widget.CardView
         android:layout_width="130dp"
         android:layout_height="100dp"
-        android:backgroundTint="@android:color/holo_blue_light"
+        android:backgroundTint="@android:color/holo_blue_bright"
         android:id="@+id/card2"
         android:layout_toRightOf="@id/card1"
         app:cardCornerRadius="4dp"
         android:layout_marginStart="4dp"
         android:layout_marginEnd="4dp"
         android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
         android:layout_below="@id/txt_title">
 
         <RelativeLayout
@@ -133,12 +166,15 @@
     <androidx.cardview.widget.CardView
         android:layout_width="130dp"
         android:layout_height="100dp"
-        android:backgroundTint="@android:color/holo_blue_light"
+        android:backgroundTint="@android:color/holo_blue_bright"
         android:layout_toRightOf="@id/card2"
         app:cardCornerRadius="4dp"
         android:layout_marginStart="4dp"
         android:layout_marginEnd="4dp"
         android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
         android:layout_below="@id/txt_title">
 
 
@@ -153,7 +189,7 @@
                 android:text="Meninggal"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="8dp"
-                android:textSize="10sp"
+                android:textSize="15sp"
                 android:textColor="@android:color/white"
                 android:textStyle="bold"/>
 
@@ -182,5 +218,6 @@
                 android:textStyle="bold"/>
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
-
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
 </RelativeLayout>

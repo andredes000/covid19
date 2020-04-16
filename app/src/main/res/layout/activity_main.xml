@@ -5,7 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/darker_gray"
+    android:orientation="vertical"
     tools:context=".MainActivity">
+
+
     <com.github.ybq.android.spinkit.SpinKitView
         android:id="@+id/spin_kit"
         style="@style/SpinKitView.Large.Wave"
@@ -21,4 +24,12 @@
         android:scrollbars="vertical">
 
     </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="©Rizkhan Hadi"
+        android:layout_below="@id/rv_data"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"/>
 </RelativeLayout>
